@@ -55,12 +55,7 @@ jQuery(function(){
 	});
 
 	// Tooltips
-	jQuery(".tips, .help_tip").tipTip({
-    	'attribute' : 'data-tip',
-    	'fadeIn' : 50,
-    	'fadeOut' : 50,
-    	'delay' : 200
-    });
+	jQuery(".tips, .help_tip").tipTip(woocommerce_admin.tips_settings);
 
 	// wc_input_table tables
 	jQuery('.wc_input_table.sortable tbody').sortable({
